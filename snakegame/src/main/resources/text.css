@@ -1,0 +1,7 @@
+.custom-dialog-pane {
+    -fx-background-color: green; /* Set the background color */
+}
+
+.custom-dialog-pane .text-input {
+    -fx-font-size: 14px; /* Set the font size for the text input */
+}

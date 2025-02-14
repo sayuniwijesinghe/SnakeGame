@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.snakegame.HelloController">
+
+    <!-- ImageView for the background -->
+    <ImageView fx:id="backgroundImage" fitHeight="560" fitWidth="870" preserveRatio="true">
+        <image>
+            <Image url="@/gamemenu.png" />
+        </image>
+    </ImageView>
+
+    <!-- Buttons and Label -->
+    <VBox alignment="CENTER_LEFT">
+
+        <Button alignment="TOP_CENTER" onAction="#DifficultyButton" prefHeight="53.0" prefWidth="280.0" style="-fx-background-color: white; -fx-border-width: 4; -fx-border-color: black; -fx-border-radius: 5; -fx-padding: 10;" text="DIFFICULTY LEVEL">
+            <VBox.margin>
+                <Insets bottom="20.0" />
+            </VBox.margin>
+            <padding>
+                <Insets bottom="15.0" left="400.0" top="10.0" />
+            </padding>
+            <font>
+                <Font name="Wawati SC Regular" size="20.0" />
+            </font>
+        </Button>
+        <Button onAction="#SettingsButton" prefHeight="53.0" prefWidth="276.0" style="-fx-background-color: white; -fx-border-width: 4; -fx-border-color: black; -fx-border-radius: 5; -fx-padding: 10;" text="SETTINGS">
+            <VBox.margin>
+                <Insets bottom="10.0" />
+            </VBox.margin>
+            <padding>
+                <Insets bottom="15.0" left="200.0" top="10.0" />
+            </padding>
+            <font>
+                <Font name="Wawati SC Regular" size="20.0" />
+            </font>
+        </Button>
+        <StackPane.margin>
+            <Insets left="75.0" top="50.0" />
+        </StackPane.margin>
+    </VBox>
+
+</StackPane>
